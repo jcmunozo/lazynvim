@@ -32,5 +32,8 @@ set.numberwidth = 4
 set.cursorline = true
 set.cursorlineopt = "both"
 set.scrolloff = 5
+set.shiftwidth = 2
+set.autoindent = true
+set.foldenable = false
 vim.cmd [[syntax enable]]
 -- centering the cursor with scrolloff 999, but look not good in the end of the file
