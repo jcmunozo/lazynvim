@@ -10,7 +10,21 @@ return {
     keys = {
       { "<leader>nt", "<cmd>Neotree toggle<cr>", desc = "NeoTree" },
     },
-    -- main = "config.plugins.neotree",
-    -- config = true,
+    opts = {
+      filesystem = {
+        filtered_items = {
+          visible = false,
+          show_hidden_count = true,
+          hide_dotfiles = false,
+          hide_gitignored = false,
+          hide_by_name = {
+            '.git',
+          },
+          hide_by_pattern = {
+            '*.sqlite3',
+          },
+        },
+      },
+    },
     lazy = true,
 }
