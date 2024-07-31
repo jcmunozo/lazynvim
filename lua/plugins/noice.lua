@@ -21,6 +21,13 @@ return {
         },
         view = "mini",
       },
+      {
+        filter = {
+          event = "msg_show",
+          kind = "apply_language_filter",
+        },
+        view = "popup",
+      },
     },
     presets = {
       bottom_search = true,
@@ -34,11 +41,11 @@ return {
     views = {
       cmdline_popup = {
         position = {
-          row = "50%",
+          row = "30%",
           col = "50%",
         },
         size = {
-          width = 60,
+          width = "auto",
           height = "auto",
         },
       },
@@ -71,8 +78,8 @@ return {
     { "<leader>sna", function() require("noice").cmd("all") end, desc = "Noice All" },
     { "<leader>snd", function() require("noice").cmd("dismiss") end, desc = "Dismiss All" },
     { "<leader>snt", function() require("noice").cmd("pick") end, desc = "Noice Picker (Telescope/FzfLua)" },
-    { "<c-f>", function() if not require("noice.lsp").scroll(4) then return "<c-f>" end end, silent = true, expr = true, desc = "Scroll Forward", mode = {"i", "n", "s"} },
-    { "<c-b>", function() if not require("noice.lsp").scroll(-4) then return "<c-b>" end end, silent = true, expr = true, desc = "Scroll Backward", mode = {"i", "n", "s"}},
+    { "<S-f>", function() if not require("noice.lsp").scroll(4) then return "<S-f>" end end, silent = true, expr = true, desc = "Scroll Forward", mode = {"i", "n", "s"} },
+    { "<S-b>", function() if not require("noice.lsp").scroll(-4) then return "<S-b>" end end, silent = true, expr = true, desc = "Scroll Backward", mode = {"i", "n", "s"}},
   },
   config = function(_, opts)
     -- HACK: noice shows messages from before it was enabled,

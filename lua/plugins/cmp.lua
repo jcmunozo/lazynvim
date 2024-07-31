@@ -24,7 +24,7 @@ return {
       },
       mapping = {
         ["<C-d>"] = cmp.mapping.scroll_docs(-4),
-        ["<C-f>"] = cmp.mapping.scroll_docs(4),
+        ["<C-u>"] = cmp.mapping.scroll_docs(4),
         ["<C-e>"] = cmp.mapping.abort(),
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then

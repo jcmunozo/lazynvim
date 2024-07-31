@@ -6,11 +6,14 @@ return {
   },
   build = ":TSUpdate",
   event = "VeryLazy",
-  main = "nvim-treesitter.configs",
   opts = {
     ensure_installed = {
       "lua",
       "html",
+      "javascript",
+      "css",
+      "python",
+      "htmldjango",
       "luadoc"
     },
     highlight = {
