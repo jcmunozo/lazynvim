@@ -11,6 +11,7 @@ return {
       "lua",
       "html",
       "javascript",
+      "java",
       "css",
       "python",
       "htmldjango",

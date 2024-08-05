@@ -43,6 +43,7 @@ return {
       }
     })
     require("lspconfig").tsserver.setup({})
+    require("lspconfig").jdtls.setup({})
     require("lspconfig").pyright.setup({
       on_attach = on_attach,
     })

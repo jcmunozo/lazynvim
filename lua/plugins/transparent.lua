@@ -32,8 +32,13 @@ return {
           "NvimTreeNormal",
           "NormalFloat",
           "NvimTreeEndOfBuffer",
-          "StatusLine",
-          "StatusLineNC",
+          "NeoTreeNormal",
+          "NeoTreeNormalNC",
+          "NeoTreeEndOfBuffer",
+          "TelescopeNormal",
+          "TelescopePrompt",
+          "TelescopeResults",
+          "TelescopePreview",
       }, -- table: additional groups that should be cleared
       exclude_groups = {
           "CursorLine",
