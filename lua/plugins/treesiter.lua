@@ -8,6 +8,10 @@ return {
   event = "VeryLazy",
   opts = {
     ensure_installed = {
+      "elixir",
+      "eex",
+      "heex",
+      "erlang",
       "lua",
       "html",
       "javascript",
@@ -15,7 +19,7 @@ return {
       "css",
       "python",
       "htmldjango",
-      "luadoc"
+      "luadoc",
     },
     highlight = {
       enable = true,

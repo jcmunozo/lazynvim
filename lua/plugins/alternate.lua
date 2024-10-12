@@ -4,6 +4,10 @@ return {
   opts = {
     alternates = {
       ["=="] = "!=",
+      ["yes"] = "no",
+      ["no"] = "yes",
+      ["Yes"] = "No",
+      ["No"] = "Yes",
     }
   },
   config = function(_, opts)

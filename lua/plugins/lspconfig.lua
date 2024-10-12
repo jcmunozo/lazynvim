@@ -42,7 +42,12 @@ return {
         }
       }
     })
-    require("lspconfig").tsserver.setup({})
+    local capabilities = require("cmp_nvim_lsp").default_capabilities()
+		require("lspconfig").elixirls.setup({
+				cmd = { "elixir-ls" },
+				capabilities = capabilities,
+			})
+    require("lspconfig").ts_ls.setup({})
     require("lspconfig").jdtls.setup({})
     require("lspconfig").pyright.setup({
       on_attach = on_attach,
