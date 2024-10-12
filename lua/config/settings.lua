@@ -35,5 +35,9 @@ set.scrolloff = 5
 set.shiftwidth = 2
 set.autoindent = true
 set.foldenable = false
-vim.cmd [[syntax enable]]
+--"Autocommand to enable Treesitter in .ex and .exs files
+vim.api.nvim_create_autocmd({"BufEnter", "BufRead", "BufNewFile"}, {
+  pattern = {"*.ex", "*.exs"},
+  command = "TSBufEnable highlight"
+})
 -- centering the cursor with scrolloff 999, but look not good in the end of the file
