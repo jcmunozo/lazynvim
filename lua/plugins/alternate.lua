@@ -8,6 +8,12 @@ return {
       ["no"] = "yes",
       ["Yes"] = "No",
       ["No"] = "Yes",
+      ["if"] = "else",
+      ["else"] = "if",
+      ["and"] = "or",
+      ["or"] = "and",
+      ["||"] = "&&",
+      ["&&"] = "||",
     }
   },
   config = function(_, opts)
