@@ -1,12 +1,15 @@
 return {
   "folke/noice.nvim",
   event = "VeryLazy",
+  dependencies = {
+    "MunifTanjim/nui.nvim",
+    "rcarriga/nvim-notify",
+  },
   opts = {
     lsp = {
       override = {
         ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
         ["vim.lsp.util.stylize_markdown"] = true,
-        ["cmp.entry.get_documentation"] = true,
       },
     },
     routes = {
@@ -21,22 +24,11 @@ return {
         },
         view = "mini",
       },
-      {
-        filter = {
-          event = "msg_show",
-          kind = "apply_language_filter",
-        },
-        view = "popup",
-      },
     },
     presets = {
       bottom_search = true,
       command_palette = true,
       long_message_to_split = true,
-    },
-    cmdline = {
-      enabled = true,      -- enables the Noice cmdline UI
-      view = "cmdline_popup", -- view for rendering the cmdline. Change to `cmdline` to get a classic cmdline at the bottom
     },
     views = {
       cmdline_popup = {
