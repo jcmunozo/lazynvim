@@ -41,12 +41,6 @@ map("v", ">", ">gv", opts)
 map("x", "K", ":move '<-2<CR>gv-gv", opts)
 map("x", "J", ":move '>+1<CR>gv-gv", opts)
 
--- Betther window navigation
-map("n","<C-h>", "<C-w>h", opts)
-map("n","<C-j>", "<C-w>j", opts)
-map("n","<C-k>", "<C-w>k", opts)
-map("n","<C-l>", "<C-w>l", opts)
-
 -- TAB to move beetwen bufers
 map("n", "<TAB>", ":bnext<CR>", opts)
 map("n", "<S-TAB>", ":bprevious<CR>", opts)

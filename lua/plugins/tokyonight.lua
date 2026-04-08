@@ -2,7 +2,7 @@ return {
   "folke/tokyonight.nvim",
   lazy = false,
   priority = 1000,
- config = function()
+  config = function()
     require("tokyonight").setup({
       -- Choose the style: "storm", "moon", "night", or "day"
       style = "moon",
