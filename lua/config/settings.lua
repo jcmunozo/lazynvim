@@ -33,6 +33,9 @@ set.cursorline = true
 set.cursorlineopt = "both"
 set.scrolloff = 5
 set.shiftwidth = 2
+set.tabstop = 2
+set.softtabstop = 2
+set.expandtab = true
 set.autoindent = true
 set.foldenable = false
 -- centering the cursor with scrolloff 999, but look not good in the end of the file
