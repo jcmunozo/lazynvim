@@ -46,6 +46,6 @@ return {
       cmd = { "elixir-ls" },
     })
 
-    vim.lsp.enable({ 'lua_ls', 'elixirls', 'ts_ls', 'jdtls', 'pyright' })
+    vim.lsp.enable({ 'lua_ls', 'elixirls', 'ts_ls', 'jdtls', 'pyright', 'texlab' })
   end
 }

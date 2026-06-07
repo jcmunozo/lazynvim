@@ -19,6 +19,8 @@ return {
       "python",
       "htmldjango",
       "luadoc",
+      "latex",
+      "bibtex",
     },
     highlight = {
       enable = true,
