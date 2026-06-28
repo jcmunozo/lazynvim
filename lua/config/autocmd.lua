@@ -1,5 +1,3 @@
---"Autocommand to enable Treesitter in .ex and .exs files
-vim.api.nvim_create_autocmd({"BufEnter", "BufRead", "BufNewFile"}, {
-  pattern = {"*.ex", "*.exs"},
-  command = "TSBufEnable highlight"
-})
+-- El highlight de Treesitter para Elixir (.ex/.exs) ahora se activa
+-- automáticamente desde lua/plugins/treesiter.lua (autocomando FileType,
+-- rama `main`). El comando antiguo `:TSBufEnable highlight` ya no existe.
