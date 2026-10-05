@@ -228,6 +228,20 @@ Personal Neovim configuration using [lazy.nvim](https://github.com/folke/lazy.nv
 
 ---
 
+### HTTP Client (`kulala.nvim`)
+
+| Key | Action |
+|-----|--------|
+| `<leader>rs` | Send request under cursor |
+| `<leader>rj` | Jump to next request |
+| `<leader>rk` | Jump to previous request |
+| `<leader>rb` | Open scratchpad (ad-hoc request) |
+| `<leader>rt` | Toggle response view (body/headers) |
+
+> Only available in `.http` / `.rest` files.
+
+---
+
 ### Noice (UI)
 
 | Key | Action |
