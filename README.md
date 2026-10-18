@@ -262,4 +262,3 @@ Personal Neovim configuration using [lazy.nvim](https://github.com/folke/lazy.nv
 | `<leader>ug` | Toggle indent guides |
 | `<leader>pl` | Browse and open plugin files |
 
-### HTTP Client (`Kulala.nvim`)
